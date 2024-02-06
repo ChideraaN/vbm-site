@@ -1,0 +1,7 @@
+.slider {
+  img {
+    &:not(.logo-large) {
+      transform: scale(1.7);
+    }
+  }
+}

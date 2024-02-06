@@ -1,0 +1,164 @@
+.home {
+  color: white;
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .hero-video {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .hero-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .hero-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  @keyframes hover-me {
+    100% {
+      transform: translate3d(0, 20px, 0);
+    }
+  }
+
+  section {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .business-info {
+
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .container {
+        padding-top: 65px;
+        padding-bottom: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          height: 600px;
+          padding-top: 120px;
+        }
+
+        .business-info-text {
+          padding-left: 50px;
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-family: DrukWideBold;
+            font-size: 110px;
+            line-height: 95px;
+            margin-bottom: 0;
+
+            span {
+              color: #967029;
+            }
+          }
+
+          p {
+            font-family: Avenir-Roman;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #impact-in-numbers {
+    .impact-container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .impact-stats {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        align-items: center;
+        padding-bottom: 100px;
+      }
+
+      .title {
+        text-align: center;
+        font-family: DrukWideBold;
+        font-size: 70px;
+      }
+
+      .slider {
+        width: 100%;
+
+        img {
+          width: 50px;
+          margin: 0 40px;
+        }
+      }
+
+    }
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:not(.shifted-row){
+      align-items: center;
+    }
+    .shifted-row {
+      padding-top: 100px;
+      display: flex;
+      gap: 75px;
+     
+      .quote {
+        transition: transform .2s;
+      }
+
+      .quote ~ .quote {
+        margin-top: 75px;
+      }
+    }
+
+    .quote:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .chevron {
+    height: 85px;
+    width: 100px;
+    animation: hover-me .5s infinite ease-in-out alternate;
+  }
+}
