@@ -1,19 +1,8 @@
 .quote {
-  height: 250px;
-  width: 600px;
-  border: 2px solid grey;
-  border-radius: 10px;
-
-  .styled-quotation-mark {
-    font-family: DrukWideBold;
-    font-size: 50px;
-    color: #967029;
-    padding: 0px 0px 10px 20px;
-  }
-
-  .text {
-    font-family: Avenir-Roman;
-    font-size: 22px;
-    padding-left: 50px;
-  }
+ font-size: 110%;
+ padding: 1%;
+ border: 1px solid whitesmoke;
+ border-radius: 10px;
+ width: max-content;
+ max-width: 80%;
 }

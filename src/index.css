@@ -1,3 +1,8 @@
+:root{
+  --vbm-color: #967029;
+  --body-background: #111111;
+}
+
 @font-face {
   font-family: DrukWideBold;
   src: url('../public/fonts/Druk\ Wide\ Bold.ttf');
@@ -14,15 +19,14 @@ html {
 }
 
 body {
-  background-color: #111111;
+  background-color: var(--body-background);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, video {
-  display: block;
-  max-width: 100%;
+ul {
+  list-style: none;
 }
 
 code {
@@ -54,3 +58,8 @@ code {
   transform: rotate(360deg);
 }
 
+.chevron {
+  height: 85px;
+  width: 100px;
+  animation: hover-me .5s infinite ease-in-out alternate;
+}

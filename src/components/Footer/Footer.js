@@ -6,7 +6,7 @@ export function Footer() {
     <div className="footer">
       <ul className="nav-bar-bottom">
         <li>
-          <NavLink className={({ isActive }) => (isActive ? "active" : '')} to="/Home">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <NavLink to="/Stock">Stock</NavLink>
