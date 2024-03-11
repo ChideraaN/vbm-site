@@ -1,14 +1,11 @@
-import { NavBar } from '../../components/NavBar/NavBar';
 import './Stock.scss';
-import { Footer } from '../../components/Footer/Footer'
 
 export function Stock() {
   return (
     <div>
       <section>
-        <NavBar />
         <div className="premium-quality">
-          <img className='vbm-image' src='/imgs/vbm-logo-large.png' alt='' />
+          <img className='logo-img' src='/imgs/vbm-logo-large.png' alt='' />
           <h2>PERFECT QUALITY</h2>
           <h2 className='special'>PREMIUM SERVICE</h2>
           <p>
@@ -16,9 +13,21 @@ export function Stock() {
             to Top End Automobiles, Clothes and beyond.
           </p>
           <div className='logo-container'>
-            <img src='/imgs/snapchat.svg' alt='' />
-            <img src='/imgs/instagram.svg' alt='' />
-            <img src='/imgs/tiktok.svg' alt='' />
+          <div className='logo-text'>
+              <a href='https://www.snapchat.com/add/vbmofficall'>
+                <img src='/imgs/snapchat.svg' alt='' />
+              </a>
+            </div>
+            <div className='logo-text'>
+              <a href='https://www.instagram.com/vbmofficial_/'>
+                <img src='/imgs/instagram.svg' alt='' />
+              </a>
+            </div>
+            <div className='logo-text'>
+              <a href='https://www.tiktok.com/@vbmofficial_'>
+                <img src='/imgs/tiktok.svg' alt='' />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -42,7 +51,7 @@ export function Stock() {
       </section>
       <section className='bottom'>
         <div className="never-miss-a-drop">
-          <img className='vbm-image' src='/imgs/vbm-logo-large.png' alt='' />
+          <img className='logo-img' src='/imgs/vbm-logo-large.png' alt='' />
           <h2 style={{ fontFamily: 'DrukWideBold', color: 'white' }} >NEVER MISS A DROP</h2>
           <div className='pill'>
             <h3>CONTACT US</h3>
@@ -53,20 +62,25 @@ export function Stock() {
           </p>
           <div className='logo-container-bottom'>
             <div className='logo-text'>
-              <img src='/imgs/snapchat.svg' alt='' />
-              <h4 style={{ fontFamily: 'DrukWideBold' }} className='special'>VBMOFFICIAL_</h4>
+              <a href='https://www.snapchat.com/add/vbmofficall'>
+                <img src='/imgs/snapchat.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold' }} className='special'>VBMOFFICIAL_</h4>
+              </a>
             </div>
             <div className='logo-text'>
-            <img src='/imgs/instagram.svg' alt='' />
-            <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL</h4>
+              <a href='https://www.instagram.com/vbmofficial_/'>
+                <img src='/imgs/instagram.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL_</h4>
+              </a>
             </div>
             <div className='logo-text'>
-            <img src='/imgs/tiktok.svg' alt='' />
-            <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL_</h4>
+              <a href='https://www.tiktok.com/@vbmofficial_'>
+                <img src='/imgs/tiktok.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL_</h4>
+              </a>
             </div>
           </div>
         </div>
-          <Footer />
       </section>
     </div>
   )

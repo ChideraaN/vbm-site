@@ -3,6 +3,16 @@
   --body-background: #111111;
 }
 
+a {
+  text-decoration: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: DrukWideBold;
   src: url('../public/fonts/Druk\ Wide\ Bold.ttf');
@@ -16,50 +26,27 @@
 html {
   scroll-behavior: smooth;
   overflow: auto;
+  scrollbar-width: 0;
+}
+
+section {
+  height: 100svh;
+  width: 100svw;
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--body-background);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 ul {
   list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #6d6d6d; 
-}
-
-.rotate {
-  transition: all 1s ease-in-out;
-}
-
-.rotate:hover {
-  transform: rotate(360deg);
-}
-
-.chevron {
-  height: 85px;
-  width: 100px;
-  animation: hover-me .5s infinite ease-in-out alternate;
+  width: 0;
 }

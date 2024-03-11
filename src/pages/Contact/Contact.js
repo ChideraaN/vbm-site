@@ -7,7 +7,6 @@ export function Contact() {
   return (
     <div>
       <section>
-        <NavBar />
       </section>
     </div>
   )

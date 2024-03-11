@@ -1,10 +1,8 @@
 import './Home.scss';
 import { Hero } from '../../components/HeroSection/Hero';
 import { Frame } from '../../components/Frame/Frame';
-import { LogoSlider } from '../../components/LogoSlider/LogoSlider';
-// import { StickyButton } from '../../components/StickyButton/StickButton';
 import { Quote } from '../../components/Quote/Quote';
-
+import { Carousel } from '../../components/Carousel/Carousel';
 export function Home() {
   return (
     <div className='home'>
@@ -39,7 +37,7 @@ export function Home() {
             OUR IMPACT IN NUMBERS
           </div>
           <div className='frames'>
-            <Frame text='1000+ Happy Bosses' source='/imgs/person.svg' />
+            <Frame text='Over 1000+ Happy Bosses' source='/imgs/person.svg' />
             <Frame text='100% Authenticity' source='/imgs/verified.svg' />
             <Frame text='5000+ Items Sold' source='/imgs/shopping.svg' />
           </div>
@@ -60,11 +58,45 @@ export function Home() {
             I was hesitant buying resole items online, <br /> but VBM's authenticity guarantee gave me the confidence to dive in. Best decision ever ! - Mike D
           </Quote>
           <Quote>
-            Simply the best grafter and best seller in the game - Colin S
+            Simply the best grafter and best seller in the game. Nothing less than perfect every time - Colin S
           </Quote>
         </div>
       </section>
-      <section>
+      <section id='img-display'>
+        <Carousel />
+      </section>
+      <section className='bottom'>
+        <div className="never-miss-a-drop">
+          <img className='logo-img' src='/imgs/vbm-logo-large.png' alt='' />
+          <h2 style={{ fontFamily: 'DrukWideBold', color: 'white' }} >NEVER MISS A DROP</h2>
+          <div className='pill'>
+            <h3>CONTACT US</h3>
+          </div>
+          <p style={{ color: 'white', padding: '10px' }}>
+            We offer a wide range or services, spanning from Cryptocurrency Transactions and Luxury Timepieces
+            to Top End Automobiles, Clothes and beyond.
+          </p>
+          <div className='logo-container-bottom'>
+          <div className='logo-text'>
+              <a href='https://www.snapchat.com/add/vbmofficall'>
+                <img src='/imgs/snapchat.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold' }} className='special'>VBMOFFICIAL_</h4>
+              </a>
+            </div>
+            <div className='logo-text'>
+              <a href='https://www.instagram.com/vbmofficial_/'>
+                <img src='/imgs/instagram.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL_</h4>
+              </a>
+            </div>
+            <div className='logo-text'>
+              <a href='https://www.tiktok.com/@vbmofficial_'>
+                <img src='/imgs/tiktok.svg' alt='' />
+                <h4 style={{ fontFamily: 'DrukWideBold', }} className='special'>VBMOFFICIAL_</h4>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </div >
   )

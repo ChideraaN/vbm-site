@@ -2,14 +2,16 @@
 
 
 .footer {
+  font-size: 15px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--vbm-color);
   width: 100vw;
+  height: 60px;
 
-  @media screen and (min-width:395px) {
+  @media screen and (min-width:375px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;

@@ -1,5 +1,6 @@
 .home {
   color: white;
+  width: 100%;
 
   // ######################################## BUY SELL SOURCE SECTION ########################################
 
@@ -82,12 +83,15 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        padding-bottom: 100px;
       }
     }
   }
 
   @media screen and (min-width: 960px) {
     #testimonials {
+      margin-top: 10%;
+
       .testimonials-content {
         font-size: 200%;
 
@@ -108,14 +112,17 @@
       }
     }
   }
-  
+
   // ######################################## WHAT PEOPLE SAY ########################################
 
   #what-people-say {
+    margin-top: 15%;
+
     .logo-slider {
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
     .quote-container {
       height: 100vh;
       display: flex;
@@ -145,7 +152,84 @@
   }
 }
 
-section {
-  height: 100vh;
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
   width: 100%;
+
+  .never-miss-a-drop {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .pill {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      h3 {
+        padding: 6px;
+        width: max-content;
+        border-radius: 15px;
+        font-family: DrukWideBold;
+        text-align: center;
+        color: var(--body-background);
+        background-color: var(--vbm-color);
+      }
+    }
+
+    .logo-container-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 45%;
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        max-width: 30%;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      .logo-container-bottom {
+        margin-top: 10%;
+        width: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .logo-text {
+          display: flex;
+        }  
+
+        img {
+          max-width: 30%;
+        }
+      }
+    }
+  }
+}
+
+#img-display {
+  height: max-content;
+}
+
+@media screen and (max-width:1024px) {
+  #img-display {
+    #gallery {
+      margin-top: 50%;
+    }
+  }
 }
